@@ -1,6 +1,6 @@
 # flutter_routing
 
-A new Flutter project.
+A new Flutter demo on how to use proper url navigation in the web.
 
 ![](/doc/assets/1.png)
 
