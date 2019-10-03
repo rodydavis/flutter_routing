@@ -28,7 +28,6 @@ class MyApp extends StatelessWidget {
       onUnknownRoute: (settings) => Router.onUnknownRoute(
         context,
         settings: settings,
-        initialRoute: true,
       ),
       routes: Router.routes(context),
     );

@@ -9,9 +9,6 @@ class Router {
   static Route<dynamic> onUnknownRoute(
     BuildContext context, {
     @required RouteSettings settings,
-
-    /// If [true] it will not navigate to the route and fall back to the [initialRoute]
-    bool initialRoute = false,
   }) {
     final route = settings.name;
     if (route.contains('/items')) {
@@ -20,9 +17,6 @@ class Router {
         builder: (_) => DetailsScreen(id: id),
         settings: settings,
       );
-    }
-    if (initialRoute) {
-      return null;
     }
     return MaterialPageRoute(
       builder: (_) => UnknownRouteScreen(settings: settings),
